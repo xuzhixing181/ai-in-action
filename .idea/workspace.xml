@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ai-in-action.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
       <change afterPath="$PROJECT_DIR$/hello/hello01.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_io/chain1_message.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_io/chain2_invoke_stream_batch.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_io/chain2_prompt_template.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_io/chain4_output_parsers.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_io/chain2_prompt_template.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +20,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "xuzhixing181"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/xuzhixing181/ai-in-action",
+    "accountId": "7e372185-69fa-47c7-a3e8-8a999975fb01"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -52,7 +58,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/study-code/basic-langchain/langchain-in-action",
+    "last_opened_file_path": "D:/study-code/basic-langchain",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,8 +78,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\study-code\basic-langchain\langchain-in-action" />
       <recent name="D:\study-code\basic-langchain" />
+      <recent name="D:\study-code\basic-langchain\langchain-in-action" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study-code\basic-langchain" />
@@ -98,8 +104,17 @@
       <workItem from="1762160680777" duration="1437000" />
       <workItem from="1762173753630" duration="554000" />
       <workItem from="1762175510101" duration="24110000" />
-      <workItem from="1762299484240" duration="1476000" />
+      <workItem from="1762299484240" duration="24845000" />
     </task>
+    <task id="LOCAL-00001" summary="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
+      <option name="closed" value="true" />
+      <created>1762301524235</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762301524235</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,23 +131,32 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain2_prompt_template.ipynb</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <line>36</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain2_prompt_template.ipynb</url>
-          <line>45</line>
+          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <line>58</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>file://$PROJECT_DIR$/model_io/chain2_invoke_stream_batch.ipynb</url>
           <line>91</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <line>200</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
