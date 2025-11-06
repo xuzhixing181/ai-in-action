@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
+    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践">
       <change afterPath="$PROJECT_DIR$/hello/hello01.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/model_io/chain4_output_parsers.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_io/chain2_prompt_template.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
       <workItem from="1762160680777" duration="1437000" />
       <workItem from="1762173753630" duration="554000" />
       <workItem from="1762175510101" duration="24110000" />
-      <workItem from="1762299484240" duration="24845000" />
+      <workItem from="1762299484240" duration="36229000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
       <option name="closed" value="true" />
@@ -114,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762301524235</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践">
+      <option name="closed" value="true" />
+      <created>1762335439472</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762335439472</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用" />
+    <MESSAGE value="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践" />
+    <option name="LAST_COMMIT_MESSAGE" value="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -157,6 +166,11 @@
           <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
           <line>200</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <line>370</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
