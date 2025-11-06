@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践">
-      <change afterPath="$PROJECT_DIR$/hello/hello01.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_io/chain4_output_parsers.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="Chains和基于LCEL构建Chains API的实践总结">
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/memory/chain1_basic_memory.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_io/chain2_prompt_template.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_io/chain1_message.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain1_message.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_io/chain2_invoke_stream_batch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain2_invoke_stream_batch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain3_prompt_template.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_io/chain4_output_parsers.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain4_output_parsers.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "xuzhixing181"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;xuzhixing181&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/xuzhixing181/ai-in-action",
-    "accountId": "7e372185-69fa-47c7-a3e8-8a999975fb01"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/xuzhixing181/ai-in-action.git&quot;,
+    &quot;accountId&quot;: &quot;7e372185-69fa-47c7-a3e8-8a999975fb01&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -58,7 +59,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/study-code/basic-langchain",
+    "last_opened_file_path": "D:/ai-in-action",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,10 +79,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study-code\ai-in-action" />
       <recent name="D:\study-code\basic-langchain" />
       <recent name="D:\study-code\basic-langchain\langchain-in-action" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ai-in-action\langchain-in-action" />
       <recent name="D:\study-code\basic-langchain" />
       <recent name="D:\study-code\basic-langchain\langchain-in-action" />
     </key>
@@ -105,6 +108,8 @@
       <workItem from="1762173753630" duration="554000" />
       <workItem from="1762175510101" duration="24110000" />
       <workItem from="1762299484240" duration="36229000" />
+      <workItem from="1762395062337" duration="10658000" />
+      <workItem from="1762419462266" duration="2692000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
       <option name="closed" value="true" />
@@ -122,7 +127,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762335439472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="删除提示词模板相关的重复总结">
+      <option name="closed" value="true" />
+      <created>1762395544626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762395544626</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Chains和基于LCEL构建Chains API的实践总结">
+      <option name="closed" value="true" />
+      <created>1762444333673</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762444333673</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,35 +163,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用" />
     <MESSAGE value="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践" />
-    <option name="LAST_COMMIT_MESSAGE" value="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践" />
+    <MESSAGE value="删除提示词模板相关的重复总结" />
+    <MESSAGE value="Chains和基于LCEL构建Chains API的实践总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chains和基于LCEL构建Chains API的实践总结" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <url>file://$PROJECT_DIR$/langchain-in-action/model_io/chain3_prompt_template.ipynb</url>
           <line>36</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <url>file://$PROJECT_DIR$/langchain-in-action/model_io/chain3_prompt_template.ipynb</url>
           <line>58</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain2_invoke_stream_batch.ipynb</url>
+          <url>file://$PROJECT_DIR$/langchain-in-action/model_io/chain2_invoke_stream_batch.ipynb</url>
           <line>91</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
+          <url>file://$PROJECT_DIR$/langchain-in-action/model_io/chain3_prompt_template.ipynb</url>
           <line>200</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb</url>
-          <line>370</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/langchain-in-action/model_io/chain3_prompt_template.ipynb</url>
+          <line>35</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
