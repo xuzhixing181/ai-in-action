@@ -52,23 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/ai-in-action",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.01_01_LlamaIndex_5行代码.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rag1_simple_usage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ai-in-action/rag-in-action&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="basic-langchain" is-module-sdk="true">
@@ -79,6 +81,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ai-in-action\rag-in-action" />
       <recent name="D:\study-code\ai-in-action" />
       <recent name="D:\study-code\basic-langchain" />
       <recent name="D:\study-code\basic-langchain\langchain-in-action" />
@@ -88,6 +91,60 @@
       <recent name="D:\study-code\basic-langchain" />
       <recent name="D:\study-code\basic-langchain\langchain-in-action" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.01_01_LlamaIndex_5行代码">
+    <configuration name="01_01_LlamaIndex_5行代码" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai-in-action" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag-in-action/00-简单RAG-SimpleRAG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag-in-action/00-简单RAG-SimpleRAG/01_01_LlamaIndex_5行代码.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rag1_simple_usage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai-in-action" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rag-in-action/00-简单RAG-SimpleRAG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rag-in-action/00-简单RAG-SimpleRAG/rag1_simple_usage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.01_01_LlamaIndex_5行代码" />
+        <item itemvalue="Python.rag1_simple_usage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -109,7 +166,7 @@
       <workItem from="1762175510101" duration="24110000" />
       <workItem from="1762299484240" duration="36229000" />
       <workItem from="1762395062337" duration="10658000" />
-      <workItem from="1762419462266" duration="2692000" />
+      <workItem from="1762419462266" duration="23116000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
       <option name="closed" value="true" />
@@ -143,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762444333673</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="项目结构调整">
+      <option name="closed" value="true" />
+      <created>1762444685914</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762444685914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +230,8 @@
     <MESSAGE value="提示词模板实践总结&#10;1) 提示词模板类【FewShotChatMessagePromptTemplate】&#10;2) 少量样本提示词【FewShotPromptTemplate、FewShotChatMessagePromptTemplate】&#10;3) Example Selectors示例选择器+嵌入模型+Chroma向量数据库的案例实践" />
     <MESSAGE value="删除提示词模板相关的重复总结" />
     <MESSAGE value="Chains和基于LCEL构建Chains API的实践总结" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chains和基于LCEL构建Chains API的实践总结" />
+    <MESSAGE value="项目结构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目结构调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,7 +261,16 @@
           <line>35</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/langchain-in-action/tools/chain1_basic_tools.ipynb</url>
+          <line>77</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ai_in_action$rag1_simple_usage.coverage" NAME="rag1_simple_usage Coverage Results" MODIFIED="1762474097455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rag-in-action/00-简单RAG-SimpleRAG" />
+    <SUITE FILE_PATH="coverage/ai_in_action$01_01_LlamaIndex_5.coverage" NAME="01_01_LlamaIndex_5行代码 Coverage Results" MODIFIED="1762474368884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rag-in-action/00-简单RAG-SimpleRAG" />
   </component>
 </project>
