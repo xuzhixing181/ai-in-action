@@ -1,0 +1,90 @@
+LangChain 框架核心介绍
+
+一、什么是 LangChain
+
+LangChain 是一个用于构建基于大语言模型（LLM）应用的开发框架，旨在帮助开发者更高效地集成、管理和增强大语言模型的能力，构建端到端的应用程序。
+
+它提供了一套模块化工具和接口，支持从简单的文本生成到复杂的多步骤推理任务。
+
+二、核心特性
+
+1. 模块化设计
+LangChain 采用模块化架构，开发者可以根据需求选择和使用不同的组件。主要模块包括：
+- 文档加载器（Document Loaders）：支持从各种数据源加载文档
+- 文本分割器（Text Splitters）：将长文本分割成适合处理的块
+- 向量存储（Vector Stores）：存储和检索文档的向量表示
+- 链（Chains）：将多个组件串联起来执行复杂任务
+- 代理（Agents）：让 LLM 能够自主决策和调用工具
+- 记忆（Memory）：管理对话历史和上下文信息
+
+2. 丰富的集成能力
+LangChain 支持与多种 LLM 提供商集成，包括：
+- OpenAI GPT 系列模型
+- 开源模型（如 Llama、Mistral 等）
+- 本地部署的模型
+
+3. 强大的文档处理能力
+通过 TextLoader 等文档加载器，LangChain 可以：
+- 加载各种格式的文档（TXT、PDF、HTML、Markdown 等）
+- 处理不同编码的文本文件（UTF-8、GBK 等）
+- 提取文档的元数据信息
+- 将文档转换为标准化的 Document 对象
+
+三、TextLoader 的作用
+
+TextLoader 是 LangChain 中最基础的文档加载器之一，它的主要功能包括：
+
+1. 文件读取
+TextLoader 可以读取本地文本文件，支持指定文件编码格式。
+
+2. 文档转换
+将文本文件内容转换为 LangChain 的 Document 对象，包含：
+- page_content：文档的文本内容
+- metadata：文档的元数据（如文件路径、编码格式等）
+
+3. 编码处理
+TextLoader 支持多种字符编码，包括：
+- UTF-8：国际通用编码，支持所有 Unicode 字符
+- GBK：中文 Windows 系统常用编码
+- ASCII：基础英文字符编码
+
+4. 元数据管理
+自动提取并存储文档的元数据信息，如：
+- source：文件路径
+- encoding：文件编码格式
+
+四、使用示例
+
+使用 TextLoader 加载文档非常简单：
+
+```python
+from langchain_community.document_loaders import TextLoader
+
+# 创建 TextLoader 实例
+loader = TextLoader(
+    file_path="./document.txt",
+    encoding="utf-8"
+)
+
+# 加载文档
+docs = loader.load()
+
+# 访问文档内容
+print(docs[0].page_content)  # 文档文本内容
+print(docs[0].metadata)      # 文档元数据
+```
+
+五、应用场景
+
+TextLoader 适用于以下场景：
+- 加载纯文本配置文件
+- 读取日志文件进行分析
+- 处理代码文件
+- 加载结构化的文本数据
+- RAG（检索增强生成）应用中的文档加载
+
+六、总结
+
+LangChain 的 TextLoader 为开发者提供了一个简单而强大的工具来加载和处理文本文件。通过正确使用 TextLoader，开发者可以轻松地将文本文件集成到 LangChain 应用的工作流中，为后续的文档处理、向量化、检索等操作奠定基础。
+
+无论是处理简单的配置文件，还是构建复杂的 RAG 系统，TextLoader 都是 LangChain 生态系统中不可或缺的基础组件。

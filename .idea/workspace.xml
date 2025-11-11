@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="Chains和基于LCEL构建Chains API的实践总结">
-      <change afterPath="$PROJECT_DIR$/langchain-in-action/memory/chain1_basic_memory.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/.env" afterDir="false" />
+    <list default="true" id="ccc08e62-e1ac-4c89-ac4f-3a27512e6c07" name="Changes" comment="Retrieval检索之文档加载器的实践总结">
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/memory/.ipynb_checkpoints/chain1_basic_memory-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/01-langchain-gbk.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/01-langchain-utf-8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/02-load.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/03-load.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/04-load.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/04-response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/05-load.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/06-load.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/07-fun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/07-fun_param.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/07-fun_retun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/07-param_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/08-ai.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/09-ai1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/10-test_doc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/11-langchain.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/12-test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/document/load/13-sgg_chat.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langchain-in-action/retrieval/rag1_document_loaders.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_io/chain1_message.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain1_message.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_io/chain2_invoke_stream_batch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain2_invoke_stream_batch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_io/chain3_prompt_template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain3_prompt_template.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_io/chain4_output_parsers.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain4_output_parsers.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/langchain-in-action/memory/chain1_basic_memory.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/memory/chain1_basic_memory.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/langchain-in-action/model_io/chain1_message.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/model_io/chain1_message.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/langchain-in-action/tools/chain1_basic_tools.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/langchain-in-action/tools/chain1_basic_tools.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +78,13 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ai-in-action/rag-in-action&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ai-in-action/langchain-in-action/retrieval&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;jupyter.general.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -81,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ai-in-action\langchain-in-action\retrieval" />
       <recent name="D:\ai-in-action\rag-in-action" />
       <recent name="D:\study-code\ai-in-action" />
       <recent name="D:\study-code\basic-langchain" />
@@ -166,7 +184,12 @@
       <workItem from="1762175510101" duration="24110000" />
       <workItem from="1762299484240" duration="36229000" />
       <workItem from="1762395062337" duration="10658000" />
-      <workItem from="1762419462266" duration="23116000" />
+      <workItem from="1762419462266" duration="24722000" />
+      <workItem from="1762566867277" duration="1201000" />
+      <workItem from="1762568274124" duration="3104000" />
+      <workItem from="1762651421166" duration="8971000" />
+      <workItem from="1762732625430" duration="2677000" />
+      <workItem from="1762735503300" duration="36383000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化及代码实践&#10;1) Message的使用&#10;2) 调用大模型的方式【流式、非流式、批量】&#10;3) PromptTemplate的使用">
       <option name="closed" value="true" />
@@ -208,7 +231,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762444685914</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tools的实践总结">
+      <option name="closed" value="true" />
+      <created>1762519224037</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762519224037</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Agent基本介绍、Function Call和ReAct模式、整合Memory记忆能力">
+      <option name="closed" value="true" />
+      <created>1762782754310</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762782754310</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +270,9 @@
     <MESSAGE value="删除提示词模板相关的重复总结" />
     <MESSAGE value="Chains和基于LCEL构建Chains API的实践总结" />
     <MESSAGE value="项目结构调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目结构调整" />
+    <MESSAGE value="Tools的实践总结" />
+    <MESSAGE value="Agent基本介绍、Function Call和ReAct模式、整合Memory记忆能力" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agent基本介绍、Function Call和ReAct模式、整合Memory记忆能力" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -265,6 +306,16 @@
           <url>file://$PROJECT_DIR$/langchain-in-action/tools/chain1_basic_tools.ipynb</url>
           <line>77</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/langchain-in-action/chains/chain1_basic_lcel.ipynb</url>
+          <line>11</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/langchain-in-action/retrieval/rag1_document_loaders.ipynb</url>
+          <line>100</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
